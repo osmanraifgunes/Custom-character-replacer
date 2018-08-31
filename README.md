@@ -454,4 +454,4 @@ https://www.wikipedia.org/
 	SET @StringValue = LOWER(@StringValue);
 
 	RETURN  @StringValue;
-END
+	END
