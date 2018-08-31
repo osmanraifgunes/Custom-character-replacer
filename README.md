@@ -16,13 +16,13 @@ https://www.compart.com/en/unicode/category
 https://www.wikipedia.org/
 
 
-CREATE FUNCTION [dbo].[ReplaceSeoCharacters]
-(
-	@StringValue NVARCHAR(MAX)
-)
-RETURNS NVARCHAR(MAX)
-AS
-BEGIN
+	CREATE FUNCTION [dbo].[ReplaceSeoCharacters]
+	(
+		@StringValue NVARCHAR(MAX)
+	)
+	RETURNS NVARCHAR(MAX)
+	AS
+	BEGIN
 
 	--Upper Case
 	SET @StringValue = REPLACE(@StringValue,N'Ậ','A');
